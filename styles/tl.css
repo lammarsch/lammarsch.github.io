@@ -1,0 +1,236 @@
+body
+{
+  margin:0cm;
+  font-family:'Calibri','Helvetica','Arial',sans-serif;
+  font-size: 11pt;
+  color: rgb(0, 0, 0);
+  background-image:url(../images/background3.jpg);
+  margin: 15pt auto;
+  width: 600pt;
+	max-width: 100%;
+}
+
+a
+{
+  /*font-family: 'Century Gothic','Arial','Helvetica',sans-serif;*/
+  color: rgb(0, 87, 184);
+  text-decoration:none;
+  font-weight: bold;
+}
+
+a:link
+{
+  text-decoration:none;
+}
+
+a:visited
+{
+  text-decoration:none;
+}
+
+a:hover
+{
+  text-decoration:none;
+  color: rgb(0, 156, 222);
+}
+
+div.content
+{
+  width:600pt;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(223, 239, 255);
+  border-width: 0.75pt;
+  border-style: solid;
+  margin-top: 15pt;
+  margin-left:0pt;
+  margin-right:0pt;
+  margin-bottom:20pt;
+}
+
+div.tltitle
+{
+  background-color:rgb(0, 87, 184);
+  color:rgb(255,255,255);
+  /*font-family: 'Century Gothic','Arial','Helvetica',sans-serif;*/
+  margin: 0pt;
+  padding:7.5pt;
+}
+
+div.tlname
+{
+  font-size:34pt;
+  font-weight: bold;
+}
+
+div.menu
+{
+  margin: 0pt;
+  padding-top: 0pt;
+  padding-left: 0pt;
+  padding-right: 0pt;
+  padding-bottom: 2.5pt;
+  background-color: rgb(0, 87, 184);
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+span.menucurrent
+{
+  /*font-family: 'Century Gothic','Arial','Helvetica',sans-serif;*/
+  padding-left:7.5pt;
+  padding-right:7.5pt;
+  padding-top:2.5pt;
+  padding-bottom: 2.5pt;
+  background-color:rgb(0, 156, 222);
+  color:rgb(255,255,255);
+  margin: 0pt;
+}
+
+div.sidebar
+{
+  float:right;
+  width:127.5pt;
+  margin:15pt;
+  margin-left:30pt;
+  font-size: 12px;
+}
+
+a.menulink
+{
+  color: rgb(255,255,255);
+  padding-left:7.5pt;
+  padding-right:7.5pt;
+}
+
+div.bottom
+{
+  background-color:rgb(0, 87, 184);
+  color:rgb(255,255,255);
+  margin-left: 0pt;
+  margin-right: 0pt;
+  margin-bottom: 0pt;
+  margin-top:15pt;
+  padding:7.5pt;
+  height:22.5pt;
+}
+
+img
+{
+  border-style:none;
+}
+
+p
+{
+  padding-top:15pt;
+  padding-left:15pt;
+  padding-right:15pt;
+  margin:0pt;
+  text-align: justify;
+}
+
+dl
+{
+  padding-top:15pt;
+  padding-left:15pt;
+  padding-right:15pt;
+  margin:0pt;
+  text-align: justify;
+}
+
+table
+{
+  padding-top:15pt;
+  padding-left:15pt;
+  padding-right:15pt;
+  margin:0pt;
+  text-align: justify;
+}
+
+th
+{
+  /*font-family: 'Century Gothic','Arial','Helvetica',sans-serif;*/
+  padding-right:15pt;
+  font-size:10.5pt;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+ul
+{
+  text-align: justify;
+}
+
+div.biblio-separator-bar
+{
+  text-align: left;
+  font-size: 18.75pt;
+  font-weight: bold;
+  padding-top:15pt;
+  padding-left:15pt;
+  padding-right:15pt;
+  padding-bottom:15pt;
+  margin:0pt;
+}
+
+div.biblio-entry
+{
+  min-height:55pt;
+  padding-bottom:5pt;
+  padding-right:15pt;
+}
+
+div.biblio-entry img
+{
+  float:left;
+  padding-top:4pt;
+  padding-left:15pt;
+  padding-right:15pt;
+  padding-bottom:10pt;
+}
+
+div.biblio-entry img.filefield-icon
+{
+  float:none;
+  padding:0pt;
+}
+
+h1
+{
+  /*font-family: 'Century Gothic','Arial','Helvetica',sans-serif;*/
+  text-align: left;
+  font-size: 18.75pt;
+  font-weight: bold;
+  padding-top:15pt;
+  padding-left:15pt;
+  padding-right:15pt;
+  margin:0pt;
+}
+
+h2
+{
+  /*font-family: 'Century Gothic','Arial','Helvetica',sans-serif;*/
+  text-align: left;
+  font-size: 13pt;
+  font-weight: bold;
+  padding-top:15pt;
+  padding-left:15pt;
+  padding-right:15pt;
+  margin:0pt;
+}
+
+h3
+{
+  /*font-family: 'Century Gothic','Arial','Helvetica',sans-serif;*/
+  text-align: left;
+  font-size: 0.4cm;
+  font-weight: bold;
+  margin-left: 0.5cm;
+  margin-right: 0.5cm;
+  margin-bottom: 0cm;
+  margin-top: 0.5cm;
+}
+
+p.indent
+{
+	margin-left: 30pt;
+}
