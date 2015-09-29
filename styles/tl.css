@@ -7,6 +7,7 @@ body
   background-image:url(../images/background4.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 15pt auto;
   width: 600pt;
 	max-width: 100%;
