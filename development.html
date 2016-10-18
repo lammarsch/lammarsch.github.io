@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <meta content="text/html; charset=us-ascii" http-equiv="Content-Type">
+  <link rel="stylesheet" type="text/css" href="styles/tl.css">
+  <link rel="shortcut icon" href="images/tl2015.png">
+  <script src="js/anti_harvest.js" type="text/javascript"></script>
+
+  <title>Tim Lammarsch</title>
+</head>
+
+<body>
+
+<div class="content">
+
+<div class="tltitle">
+Dr.
+<div class="tlname">Tim Lammarsch</div>
+</div>
+
+<div class="menu">
+  <a class="menulink" href="index.html">Overview</a><a class="menulink" href="aboutme.html">About Me</a><span class="menucurrent">Development</span><a class="menulink" href="publications.html">Publications</a><a class="menulink" href="research.html">Research</a><a class="menulink" href="teaching.html">Teaching</a><a class="menulink" href="links.html">Links</a>
+</div>
+
+<div class="sidebar">
+<img src="images/unity3dteaser.png" alt="Paper Teaser" style="width:160px; padding-top: 7.5pt; padding-bottom: 7.5pt;" ><br>
+
+<a href="publications.html#Unity Publication">Native Cross-platform Visualization: A Proof of Concept Based on the Unity3D Game Engine</a>
+</div>
+
+<p>
+Following up on the <a href="publications.html#Unity Publication">recent publication on Visualization using the Unity3D engine</a>,
+I did some further testing on how <a href="https://unity3d.com">Unity3D</a> can be applied. I realized that especially for beginners,
+not everything is explained a simple as needed. There are also a lot of video guides, but I belong to a group of people
+who rather read up on stuff. Consequently, I solved some problems
+an decided to disclose those results here. (I omitted the check date for the links, please inform me about dead links &ndash; thank you.)
+</p>
+
+<h1>
+Unity3D FAQ (from a Personal Perspective)
+</h1>
+
+<h2>[2D] How do I convert screen coordinates to world coordinates?</h2>
+
+<p style="text-align: left;">
+The typical method you find for 3D coordinates
+(<a href="https://docs.unity3d.com/ScriptReference/Camera.ScreenToWorldPoint.html"><tt>Camera.ScreenToWorldPoint</tt></a>)
+will not work as expected in 2D. The solution that worked for me is based on
+<a href="http://answers.unity3d.com/questions/540888/converting-mouse-position-to-world-stationary-came.html">this thread</a>:
+</p>
+
+<p class="code">
+<code>Camera camera = Camera.allCameras[0]; <code class="comment">// primitve; use the way fitting for you</code>
+<code class="comment">// get the plane were your objects are (assuming camera looking from z: xy-plane)</code>
+Plane basePlane = new Plane(Vector3.forward, Vector3.zero);
+Ray ray = camera.ScreenPointToRay(screenPosition);
+float distance;
+basePlane.Raycast(ray, out distance);
+Vector3 worldPosition = ray.GetPoint(distance);</code>
+</p>
+
+<h2>[2D] Friction does not work &ndash; why?</h2>
+
+<p>
+Make sure that you are aware of <a href="https://docs.unity3d.com/Manual/class-PhysicsMaterial2D.html">how to use materials</a>.
+If you are changing the friction a run-time, there seems to be a bug solved in <a href="http://answers.unity3d.com/questions/579995/physics-material-2d-change-during-runtime-not-taki.html">this thread</a>.
+For me, however, there was another problem: I used a
+<a href="https://docs.unity3d.com/Manual/class-CircleCollider2D.html">Circle Collider 2D</a>. This collider
+seems to actually create a &quot;rolling&quot; object (still working on this), as expected from real world.
+Thus, if you want friction slowing
+down an object, the use something like a <a href="https://docs.unity3d.com/Manual/class-BoxCollider2D.html">Box Collider 2D</a>.
+
+</p>
+
+<div class="bottom">
+Research web site by Tim Lammarsch, 2011&ndash;2016
+</div>
+
+</div>
+
+</body>
+</html>

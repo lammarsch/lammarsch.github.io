@@ -133,6 +133,28 @@ p
   text-align: justify;
 }
 
+p.code
+{
+  background-color:rgb(223,223,223);
+  text-align: left;
+  padding:7.5pt;
+  margin-top:7.5pt;
+  margin-left:15pt;
+  margin-right:15pt;
+}
+
+code
+{
+  white-space: pre;
+  font-family: "courier", monospace;
+  font-weight: bold;
+}
+
+code.comment
+{
+  color:rgb(0,191,0);
+}
+
 dl
 {
   padding-top:15pt;
