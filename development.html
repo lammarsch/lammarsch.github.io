@@ -71,7 +71,20 @@ For me, however, there was another problem: I used a
 seems to actually create a &quot;rolling&quot; object (still working on this), as expected from real world.
 Thus, if you want friction slowing
 down an object, use something like a <a href="https://docs.unity3d.com/Manual/class-BoxCollider2D.html">Box Collider 2D</a>.
+</p>
 
+<h2>How do a load another scene?</h2>
+
+<p>
+I found a <a href="https://unity3d.com/learn/tutorials/modules/beginner/live-training-archive/creating-a-scene-menu">video guide</a>,
+yet it seems to partially use deprecated functions. You can load a scene from a script by calling
+</p>
+<p class="code">
+<code>SceneManager.LoadScene("SceneName");</code>
+</p>
+<p>
+The name of the scene can be set in the Unity development environment. For the scene to be loadable that way, you need to open
+the build settings (Ctrl+Shift+B) and drag it into the list of scenes in the build.
 </p>
 
 <div class="bottom">
