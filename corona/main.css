@@ -1,0 +1,65 @@
+:root {
+    --color-background: #abd9e9;
+    --color-recovered: #2c7bb6;
+    --color-ill: #fdae61;
+    --color-deaths: #d7191c;
+}
+
+body {
+	width: 96%;
+    height: 96%;
+    position: absolute;
+	overflow: hidden;
+}
+
+div.mapContainer {    
+    width: 100%;
+    height: 55%;
+}
+
+div.timelineContainer {    
+    margin-top: 2%;
+    width: 100%;
+    height: 30%;
+}
+
+svg.map {
+    width: 100%;
+    height: 100%;
+}
+
+svg.timeline {
+    width: 100%;
+    height: 100%;
+}
+
+text {
+    user-select:none;
+    pointer-events: none;
+}
+
+line.position {
+    stroke:black;
+    stroke-width: 2px;
+    pointer-events: none;
+}
+
+path.country {
+    fill: var(--color-background);
+    stroke: #ffffff;
+}
+
+path.recovered {
+    fill: var(--color-recovered);
+    /*stroke: #ffffff;*/
+}
+
+path.ill {
+    fill: var(--color-ill);
+    /*stroke: #ffffff;*/
+}
+
+path.deaths {
+    fill: var(--color-deaths);
+    /*stroke: #ffffff;*/
+}
