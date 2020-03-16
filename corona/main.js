@@ -86,10 +86,10 @@ function init() {
    }
 
     queue()
-        .defer(d3.json, "https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson")
-        .defer(d3.csv, "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv")
-        .defer(d3.csv, "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv")
-        .defer(d3.csv, "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv")
+        .defer(d3.json, "world.geojson")
+        .defer(d3.csv, "time_series_19-covid-Confirmed.csv")
+        .defer(d3.csv, "time_series_19-covid-Recovered.csv")
+        .defer(d3.csv, "time_series_19-covid-Deaths.csv")
         .await(dataLoaded);
 
     window.addEventListener('resize', resizeRedraw);    	   		
